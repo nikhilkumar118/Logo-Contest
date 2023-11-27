@@ -1,3 +1,8 @@
+html{
+  height: 100%;
+}
+
+
 /* Reset some default styles */
 body, h1, h2, p, ul {
     margin: 0;
@@ -8,7 +13,14 @@ body, h1, h2, p, ul {
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #d8cece;
+    /* background-color: #d8cece; */
+    background-image: url(BG.jpg);
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
   }
   
   header {
@@ -51,8 +63,9 @@ body, h1, h2, p, ul {
 }
 
   main img{
-    width: 25%;
+    width: 260px;
     border-radius: 25px;
+    margin: 10px;
   }
   .social p{
     text-align: center;
@@ -64,9 +77,21 @@ body, h1, h2, p, ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
   }
   .social a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+  }
+
+  #about ol{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
   
   .btn {
@@ -76,6 +101,7 @@ body, h1, h2, p, ul {
     background-color: #333;
     color: #fff;
     border-radius: 5px;
+    margin-bottom: 10px;
   }
   
   .btn:hover {
@@ -89,4 +115,6 @@ body, h1, h2, p, ul {
     background-color: #333;
     color: #fff;
   }
-  
+  footer p{
+    margin-top: 10px;
+  }
